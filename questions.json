@@ -1,0 +1,73 @@
+[
+    {
+        "question": "What is function overloading in C++?",
+        "options":["Ability to define multiple functions with different names and different parameters","Ability to define multiple functions with the same name but different parameters","Ability to define multiple functions with different names but the same parameters","Ability to define multiple functions with the same name and same parameters"],
+        "correctAnswer": "Ability to define multiple functions with the same name but different parameters"
+    },
+    {
+        "question": "```cpp\nFind the output for following snippet:\n#include<iostream>\nusing namespace std;\nvoid guessme(int a, int b, int k = 0);\nint main() {\n    guessme(4, 5);\n    return 0;\n}\nvoid guessme(int x, int y, int z) {\n    cout << x << \"\\t\" << y << \"\\t\" << z;\n}\n```",
+        "options": ["0 4 5","4 5 0","0 5 4","4 0 5"],
+        "correctAnswer": "4 5 0"
+    },
+    
+    {
+        "question": "Which of the following function calls would be ambiguous if you have two overloaded functions with the same name and parameter list in a C++ program?",
+        "options": ["functionName(10, 20)","functionName(3.14, 2.71)","functionName(\"Hello\", \"World\")","all of the above"],
+        "correctAnswer": "all of the above"
+    },
+    {
+                    
+        "question": "```cpp\nHow many parameters does this function need when calling it into the main function:\n #include <iostream>\nusing namespace std;\n\nint golittlerockstar (int a, int b, int c, int d){\n\ncout<< \"Tick tock\";}\n```",
+        "options": ["2","1","3","4"],
+        "correctAnswer": "4"
+        
+    },
+    {
+        "question": "```cpp\nvoid printType(int a) {\n    cout << \"integer\" << endl;\n}\nvoid printType(string b) {\n    cout << \"string\" << endl;\n}\nvoid printType(double c) {\n    cout << \"double\" << endl;\n}\n\nint main() {\n    printType(10);\n    printType(0.1);\n    printType(\"luffy\");\n    return 0;\n}\nOutput :\ninterger\ndouble\nstring\nhow can you achieve the output :\n```",
+        "options": ["by passing different parameters (a,b,c) in each overloaded function","by changing the dataType (int,double,string) of the passed variable in each overloaded function.","by using the same name for each function.","all of the above"],
+        "correctAnswer": "all of the above"        
+    },
+    {
+        "question": "In C++, when multiple functions with the same name but different parameter lists are defined, what happens to their addresses?",
+        "options": ["They all share the same address","Each function has a unique address","Addresses are assigned based on the order of declaration","Address resolution is undefined"],
+        "correctAnswer": "Each function has a unique address"        
+    },
+    {
+        "question": "To find the address of an overloaded function in C++, you should use:",
+        "options": ["The function name directly","The function name followed by the argument types in angle brackets","The ‘addressof’ operator (&)","The sizeof operator"],
+        "correctAnswer": "The function name followed by the argument types in angle brackets"        
+    },
+    {
+        "question": "Which of the following methods can be used to retrieve the address of an overloaded function in C++?",
+        "options": ["Using the typeid operator","Using the ‘addressof’ operator (&)","Using the sizeof operator","Using the this pointer"],
+        "correctAnswer": "Using the ‘addressof’ operator (&)"        
+    },
+    {
+        "question": "Which C++ keyword allows you to explicitly specify the address of a particular overloaded function?",
+        "options": ["explicit","addressof","extern","overload"],
+        "correctAnswer": "extern"        
+    },
+    {
+        "question": "When finding the address of an overloaded function, what is the significance of the argument types?",
+        "options": ["Argument types are not considered when finding the address","Argument types are used to disambiguate overloaded functions","Argument types determine the function's scope"," Argument types are ignored, and the function with the earliest declaration is used."],
+        "correctAnswer": "Argument types are used to disambiguate overloaded functions"        
+    },
+    {
+        "question": "When you take the address of an overloaded function, which of the following is true?",
+        "options": ["The address is resolved at compile-time","The address is resolved at runtime","The address depends on the function's return type","The address depends on the function's name"],
+        "correctAnswer": "The address is resolved at compile-time"        
+    },
+    {
+        "question": "In C++, can you have two functions with the same name and the same parameter list but in different classes, and if so, how are their addresses determined?",
+        "options": ["Yes, their addresses are resolved based on the class hierarchy"," No, it's not allowed to have such functions in C++","Yes, their addresses are resolved based on the order of declaration",". No, the compiler throws an error when such a situation occurs."],
+        "correctAnswer": "Yes, their addresses are resolved based on the class hierarchy"        
+    },
+    {
+        "question": "```cpp\nWhat is the output of the snippet:\n#include<iostream>\nusing namespace std;\nvoid sum(double a, int b) {\n    cout << a + b << endl;\n}\nvoid sum(int a, double b) {\n    cout << a + b << endl;\n}\n\nint main() {\n    sum(4.4, 2);\n    sum(2, 5.5);\n    return 0;\n}\n```",
+        "options": ["error","6.4 7.5","7.5 6.4","6.5  7.4"],
+        "correctAnswer": "6.4 7.5"        
+    }
+
+
+  
+]
